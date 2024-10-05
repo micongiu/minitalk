@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: micongiu <micongiu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/05 13:42:14 by micongiu          #+#    #+#             */
+/*   Updated: 2024/10/05 13:43:14 by micongiu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <signal.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -44,7 +56,7 @@ void	sig_handler(int signal, siginfo_t *talk, void *context)
 		ft_putstr_fd("ciao\n", 1);
 }
 
-int main (int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int					pid;
 	int					i;
